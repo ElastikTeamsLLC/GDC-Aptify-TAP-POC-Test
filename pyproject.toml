@@ -17,15 +17,16 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
-singer-sdk = { version = "~0.44.3" }
-sqlalchemy = "~2.0.36"
-pendulum = "*"
+singer-sdk = { version = "^0.44.3" }
+sqlalchemy = "^2.0.36"
+pendulum = "^3.0.0"
 pyodbc = "^5.2.0"
+pymssql= "^2.3.0"
 fs-s3fs = { version = "^1.1.1", optional = true }
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.1"
-singer-sdk = { version = "~0.44.3", extras = ["testing"] }
+singer-sdk = { version = "^0.44.3", extras = ["testing"] }
 
 [tool.poetry.extras]
 s3 = ["fs-s3fs"]
